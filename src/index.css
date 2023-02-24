@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+
+
+div,
+p,
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#hero {
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1243,c_limit/5f91b299-631c-4a28-ab69-cd672f408a23/nike-just-do-it.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
