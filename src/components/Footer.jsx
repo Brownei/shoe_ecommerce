@@ -4,8 +4,8 @@ const Footer = () => {
   
   scroll()
   return (
-    <section id="footer">
-      <div className=" container mx-auto p-6 mt-32 z-10 flex flex-col justify-between space-y-7 md:flex-row md:p-10 md:space-y-0 md:items-center">
+    <section id="footer" className='bg-[#F6F6F6]'>
+      <div className="container mx-auto p-6 mt-32 z-10 flex flex-col justify-between space-y-7 md:flex-row md:p-10 md:space-y-0 md:items-center">
         <div className="flex flex-col space-y-2">
           <h5>s<span className="text-lg font-bold">H</span>oes.</h5>
           <h4 className='font-bold text-lg'>Contact</h4>

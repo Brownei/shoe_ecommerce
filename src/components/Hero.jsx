@@ -18,7 +18,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-extrabold">Step Up Your Style Game.</h1>
           <p className="mt-4 text-md md:text-lg"> Discover the Perfect Pair of Shoes Today!</p>
         </div>
-        <Link to='/explore' className="shop mt-2 mx-2 border py-2 px-5 rounded-full bg-black text-white font-medium hover:bg-[#7C5A3F]">Shop Now</Link>
+        <Link to='/explore' className="shop mt-2 mx-2 py-2 px-5 rounded-full bg-black text-white font-medium hover:bg-[#7C5A3F]">Shop Now</Link>
       </div>
     </section>
   );

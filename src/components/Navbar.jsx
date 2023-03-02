@@ -5,6 +5,7 @@ import { CgProfile } from 'react-icons/cg';
 import { FiShoppingCart } from 'react-icons/fi';
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import CartList from "./CartList";
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -63,9 +64,23 @@ const Navbar = () => {
                         : <FiShoppingCart fontSize={22} onClick={() => {setToggleCart(true)}} />
                     }
                     { toggleCart &&
-                        <div className="cart relative">
-                            <ul className="flex flex-col items-center space-y-10 fixed z-10 bg-[#F6F6F6] top-0 -right-5 pt-24 h-screen w-[70vw] md:w-[40vw]">
-
+                        <div className="cart relative cursor-default">
+                            <ul className="flex flex-col px-4 py-10 justify-start shadow-sm overflow-auto items-start space-y-10 fixed z-10 bg-[#F6F6F6] top-0 -right-5 pt-24 h-screen w-[70vw] md:w-[40vw]">
+                               <li>
+                                    <CartList image= {"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/852c5323-cf29-435d-919d-2936c4bce051/air-jordan-5-x-dj-khaled-mens-shoes-F3jrrH.png"} title={"Air Jordan 5 x DJ Khaled"} price={"50,000"} />
+                               </li>
+                               <li>
+                                    <CartList image= {"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fadf1b0c-c687-4e3d-8f4e-6d089d115a0c/air-jordan-13-retro-shoe-08RC9v.png"} title={"Air Jordan 13 Retro"} price={"50,000"} />
+                               </li>
+                               <li>
+                                    <CartList image= {"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fadf1b0c-c687-4e3d-8f4e-6d089d115a0c/air-jordan-13-retro-shoe-08RC9v.png"} title={"Air Jordan 13 Retro"} price={"50,000"} />
+                               </li>
+                               <li>
+                                    <CartList image= {"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fadf1b0c-c687-4e3d-8f4e-6d089d115a0c/air-jordan-13-retro-shoe-08RC9v.png"} title={"Air Jordan 13 Retro"} price={"50,000"} />
+                               </li>
+                                <li className="absolute bottom-20 left-24 md:left-[40%]">
+                                    <button className="px-7 py-2 md:px-10 bg-black text-white hover:bg-[#7C5A3F] rounded-full">Contact Supplier</button>
+                                </li>
                             </ul>
                         </div>
                     }
