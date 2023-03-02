@@ -10,8 +10,8 @@ const App = () => {
       <div className='App'>
             <BrowserRouter>
                 <Navbar />
-                <Logo />
                 <Pages />
+                <Logo />
             </BrowserRouter>
       </div>
   );
