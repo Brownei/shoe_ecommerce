@@ -1,4 +1,4 @@
-import { AiFillStar, AiOutlineHeart } from 'react-icons/ai';
+import { AiFillStar, AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi';
 
 const ProductList = ({ product }) => {

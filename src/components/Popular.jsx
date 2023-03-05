@@ -25,8 +25,8 @@ const Popular = () => {
       {
         products?.length > 0 
         ?
-        (<div className='container relative mx-auto p-6 grid justify-center items-center space-x-0 space-y-4 md:space-x-4 md:grid-cols-3 lg:grid-cols-4'>
-          {products.slice(0,4).map((product) => (
+        (<div className='container relative mx-auto p-6 grid grid-cols-2 justify-center items-center space-x-0 space-y-4 md:space-x-4 md:grid-cols-3 lg:grid-cols-4'>
+          {products.slice(0,4).map(( product ) => (
             <div><ProductList product={product}/></div>
           ))}
           </ div> )
