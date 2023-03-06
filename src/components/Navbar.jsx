@@ -33,14 +33,25 @@ const Navbar = () => {
                 }
                 {toggleMenu && 
                     <div className="mobile-navbar relative">
-                        <ul className="flex flex-col items-center space-y-10  fixed z-10 bg-[#F6F6F6] top-0 -left-5 pt-24 h-screen w-[70vw]">
-                            <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/'>Home</NavLink></li>
-                            <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/explore'>Explore</NavLink></li>
-                            <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/wholesale'>Wholesale</NavLink></li>
-                            <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/contact'>Contact</NavLink></li>
-                            <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/about'>About</NavLink></li>
-                        </ul>
+                       <div className="fixed z-40 bg-[#F6F6F6] -top-12 -left-6 pt-24 h-screen w-[60vw]">
+                            <div>
+                                <RxCross1 fontSize={22} className='cursor-pointer absolute my-4 top-3 right-5' onClick={() => setToggleMenu(false)} />
+                            </div>
+                            <div>
+                                <ul className="flex flex-col items-center space-y-10">
+                                    <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/'>Home</NavLink></li>
+                                    <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/explore'>Explore</NavLink></li>
+                                    <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/wholesale'>Wholesale</NavLink></li>
+                                    <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/contact'>Contact</NavLink></li>
+                                    <li className="font-semibold hover:scale-110 active:scale-110"><NavLink to= '/about'>About</NavLink></li>
+                                </ul>
+                            </div>
+                       </div>
                     </div>
+                }
+                {toggleMenu
+                    ? (<div className="bg-black/80 fixed w-full h-screen -z-10 top-0 left-0"></div>)
+                    : ''
                 }
             </div>
             <div className="font-medium">
